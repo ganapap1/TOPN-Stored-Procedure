@@ -4,9 +4,9 @@ EXEC dbo.sp_DynamicSimpleTopNGenerator
     @GroupColumn ='state',
     @ValueColumn ='sales',
     @TopGroupCount = 10,      -- provide TOP N count eg Top 10 Cities 
-	@RequireOthers = 1,       -- if 1, eg Rank more than 10 will be summarised in a separate row as Rank 11
-	@GetMeQuery = 0,          -- if 1, you get the query, otherwise you get a extract as table
-	@RenameColumnResults = 1  -- if 1, you get the Column Names renamed in output, otherwise standard Names
+    @RequireOthers = 1,       -- if 1, eg Rank more than 10 will be summarised in a separate row as Rank 11
+    @GetMeQuery = 0,          -- if 1, you get the query, otherwise you get a extract as table
+    @RenameColumnResults = 1  -- if 1, you get the Column Names renamed in output, otherwise standard Names
 
 
 	
@@ -17,6 +17,6 @@ EXEC dbo.sp_DynamicNestedTopNGenerator
     @ValueColumn ='sales',
     @TopGroupCount = 10,      -- provide TOP N count main group eg Top 10 States
     @TopSubgroupCount = 5,    -- provide TOP N count eg Top 5 cities within top 10 States
-	@RequireOthers = 1,       -- if 1, eg Rank more than 10 will be summarised in a separate row as Rank 11
-	@GetMeQuery = 0,          -- if 1, you get the query, otherwise you get a extract as table
-	@RenameColumnResults = 1  -- if 1, you get the Column Names renamed in output, otherwise standard Names
+    @RequireOthers = 1,       -- if 1, eg Rank more than 10 will be summarised in a separate row as Rank 11
+    @GetMeQuery = 0,          -- if 1, you get the query, otherwise you get a extract as table
+    @RenameColumnResults = 1  -- if 1, you get the Column Names renamed in output, otherwise standard Names
