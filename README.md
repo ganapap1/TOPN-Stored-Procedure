@@ -2,6 +2,7 @@
 Stored Procedure both Simple and Nested to analyze any table
 you have multiple parameters to declare as shown below, which makes the stored procedure highly dynamic
 
+<img width="718" alt="image" src="https://github.com/user-attachments/assets/34d512f5-6a3c-46ae-bc31-3b0146b83ced">
 
 EXEC dbo.sp_DynamicSimpleTopNGenerator
     @TableName ='superstore_dataset', 
