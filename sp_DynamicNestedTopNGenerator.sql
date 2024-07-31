@@ -13,8 +13,8 @@ CREATE PROCEDURE [dbo].[sp_DynamicNestedTopNGenerator]
     @TopGroupCount INT,
     @TopSubgroupCount INT,
     @RequireOthers BIT,
-	@GetMeQuery BIT,
-	@RenameColumnResults BIT
+    @GetMeQuery BIT,
+    @RenameColumnResults BIT
 AS
 BEGIN
     -- Declare variables
@@ -23,7 +23,7 @@ BEGIN
     DECLARE @SubgroupRankAlias NVARCHAR(MAX);
     DECLARE @OtherGroupAlias NVARCHAR(MAX);
     DECLARE @OtherSubgroupAlias NVARCHAR(MAX);
-	DECLARE @OrderDirection NVARCHAR(4);
+    DECLARE @OrderDirection NVARCHAR(4);
 
     -- Assign values to the rank alias variables
     SET @GroupRankAlias = @GroupColumn + '_rank';
