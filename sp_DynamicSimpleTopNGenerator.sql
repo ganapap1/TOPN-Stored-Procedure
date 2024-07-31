@@ -10,16 +10,16 @@ CREATE PROCEDURE [dbo].[sp_DynamicSimpleTopNGenerator]
     @GroupColumn NVARCHAR(MAX),
     @ValueColumn NVARCHAR(MAX),
     @TopGroupCount INT,
-	@RequireOthers BIT,
-	@GetMeQuery BIT,
-	@RenameColumnResults BIT
+    @RequireOthers BIT,
+    @GetMeQuery BIT,
+    @RenameColumnResults BIT
 AS
 BEGIN
     -- Declare variables
     DECLARE @sql NVARCHAR(MAX);
     DECLARE @GroupRankAlias NVARCHAR(MAX);
     DECLARE @OtherGroupAlias NVARCHAR(MAX);
-	DECLARE @OrderDirection NVARCHAR(4);
+    DECLARE @OrderDirection NVARCHAR(4);
 
     -- Assign values to the rank alias variables
     SET @GroupRankAlias = @GroupColumn + '_rank';
